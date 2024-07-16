@@ -16,13 +16,13 @@ const MainHeader = () => {
     }
 
     const handleOpenMenu = () => {
-        setNavClass("flex flex-col absolute font-bold top-0 left-0 w-4/5 bg-white h-full p-8 md:mt-2 md:static md:mr-auto md:block md:flex md:flex-row md:p-0 md:gap-4")
+        setNavClass("flex flex-col z-10 absolute font-bold top-0 left-0 w-4/5 bg-white h-full p-8 md:mt-2 md:static md:mr-auto md:block md:flex md:flex-row md:p-0 md:gap-4")
     }
 
     return (
         <>
-            <header className="container mx-auto py-8 px-6 md:py-0 md:px-0 flex aling-center gap-8">
-                <button className="md:hidden" onClick={handleOpenMenu}>
+            <header className="container mx-auto py-4 px-6 md:py-0 md:px-10 flex aling-center gap-8">
+                <button className="md:hidden " onClick={handleOpenMenu}>
                     <MenuIcon />
                 </button>
                 <img className="md:mr-0 mr-auto h-5 my-auto " src={logoSnakers} alt="" />
