@@ -20,7 +20,7 @@ const MainImg = ({ ARRAY_IMGS, ARRAY_IMGS_SMALL }) => {
             <SlideProduct
                 ARRAY_IMGS={ARRAY_IMGS}
                 ARRAY_IMGS_SMALL={ARRAY_IMGS_SMALL}
-                className="grid md:grid-cols-4 gap-4"
+                className=" grid md:grid-cols-4 gap-4"
                 handleOpenModal={handleOpenModal}
             />
             {isOpenModal && (

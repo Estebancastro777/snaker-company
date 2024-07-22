@@ -31,7 +31,7 @@ const SlideProduct = ({
 
     return (
         <section {...props}>
-            {isOpenModal && (<button onClick={handleCloseModal} className="md:text-right md:col-span-4">cerrar</button>) }
+            {isOpenModal && (<button onClick={handleCloseModal} className="md:text-right md:col-span-4 md:font-bold md:text-white">X</button>) }
             <div className="relative grid col-span-4">
                 <img src={ARRAY_IMGS[index]} onClick={handleOpenModal} alt="" className="md:cursor-pointer md:rounded-xl aspect-[16/13] md:aspect-[18/18] w-full" />
                 <div ref={btnSlider} className="md:hidden absolute top-1/2 -transalte-y-1/2 flex w-full justify-between px-4">

@@ -1,12 +1,14 @@
 import MainHeader from "@/components/header/MainHeader"
 import MainProduct from "@/components/products/MainProducts"
 
+import CartDetailsProvider from "@/context/useCartDetails"
+
 function App() {
   return (
-    <>
-    <MainHeader/>
-    <MainProduct/>
-    </>
+    <CartDetailsProvider>
+      <MainHeader/>
+      <MainProduct/>
+    </CartDetailsProvider>
   )
 }
 
